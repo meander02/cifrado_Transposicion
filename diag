@@ -1,0 +1,19 @@
+flowchart LR
+
+start
+  -> Iniciar aplicación
+  -> Mostrar interfaz de encriptación
+  -> Ingresar mensaje y clave
+  -> Hacer clic en botón "Encriptar"
+  -> Comprobar si se ha ingresado mensaje y clave
+  -> Iterar a través del mensaje
+    -> ¿Número de vueltas completado?
+      -> No
+        -> Agregar carácter al mensaje encriptado
+        -> Continuar al siguiente carácter en la misma vuelta
+      -> Sí
+        -> Regresar al inicio del mensaje
+        -> Continuar con la siguiente vuelta
+  -> Fin de la iteración
+  -> Mostrar mensaje encriptado en la interfaz
+  -> Fin del proceso
